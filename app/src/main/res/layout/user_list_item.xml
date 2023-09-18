@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minHeight="88dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/user_icon_image_view"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@drawable/male"
+        android:transitionName="dp_transition" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/white"
+        android:minHeight="88dp">
+
+        <LinearLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:id="@+id/user_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="bottom"
+                android:paddingBottom="3dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Rohit Negi" />
+
+            <TextView
+                android:id="@+id/balance_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="top"
+                android:paddingTop="3dp"
+                android:textAppearance="?android:textAppearanceSearchResultSubtitle"
+                android:textColor="@color/lighter_grey"
+                android:textStyle=""
+                tools:text="Balance: ₹ 9999999999" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/notification_image_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_info_24"
+            app:tint="@color/dark_grey" />
+
+    </RelativeLayout>
+
+</LinearLayout>
